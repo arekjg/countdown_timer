@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// Tutorial: https://youtu.be/yjOtoe29xIg
-
 namespace countdown_timer
 {
     public partial class CountDownTimer : Form
@@ -60,7 +58,7 @@ namespace countdown_timer
 
         private void minus_button_Click(object sender, EventArgs e)
         {
-            timeleft = timeleft + 5;
+            timeleft = timeleft - 5;
             TimerLabel.Text = timeleft + " seconds";
         }
     }
